@@ -1,0 +1,298 @@
+/*! GridKA Document - Reset - v1.0.0 | MIT License | cssnipper.com.br © 2014 */
+
+/*
+ * O que se segue é o resultado de muita pesquisa sobre estilo cross-browser.
+ * Este documento foi formulado e desenvolvido por Thiago Carvalho - Web Designer/Front-end Developer.
+ * Email: tcarvalho@awalke.com.br
+ * © 2007 - 2014 copyright.
+ */
+
+/* ==========================================================================
+   Definições de visualização para o documento HTML5
+   ========================================================================== */
+
+
+/* HTML5 (Estilo Geral)
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+	outline:0; padding:0; margin:0; border:0; vertical-align:baseline
+	text-rendering:optimizeLegibility;
+	font-smoothing:antialiased;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	-moz-font-smoothing:antialiased; 
+	-webkit-font-smoothing:antialiased; 
+}
+
+/* HTML5 definicoes do corpo
+   ========================================================================== */
+
+html,
+body {
+	height:auto;
+	width:auto
+}
+
+html { 
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Correto 'bloco' exibição não definido no IE 6/7/8/9 e Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correto 'inline-block' exibição não definido no IE 6/7/8/9 e Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline; 			/* hack para IE 6/7 */
+	*zoom: 1;								/* hack para IE 6/7 */
+}
+
+
+/** 
+  * Impedir que os navegadores modernos exibam a tag "audio" sem controles. 
+  * Retire o excesso de altura no iOS 5 dispositivos. 
+  */
+
+audio:not([controls]) {
+	display: none; height: 0;
+}
+
+/* Links
+   ========================================================================== */
+
+a { cursor:pointer; text-decoration:none; }
+
+/**
+ * Inconsistência contorno entre Chrome e outros navegadores.
+ */
+
+a:focus {
+    outline:none;
+}
+a:active, a:visited, a:hover{ 
+	text-decoration:none;
+ 	border:none;
+ 	outline:none;
+}
+
+
+/**
+ * Melhorar a legibilidade quando focada e também foco do mouse em todos os navegadores.
+ */
+
+
+
+/**
+ * Folhas de estilos para endereço não apresentar no IE 7/8/9, Firefox 3 e Safari 4. 
+ * Problema conhecido: no 6 apoio IE.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* Tipografia
+   ========================================================================== */
+
+/**
+ * Tamanhos de fonte, bordas e margens definidas de forma diferente no IE 6/7.
+ * Tamanhos de fonte endereço dentro seção `` e `` artigo no Firefox 4 +, Safari 5,
+ * e Chrome.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight:normal;
+}
+
+/* Níveis de tags para texto semântico
+   ========================================================================== */
+
+/**
+ * Não apresenta no IE 8/9, Safari 5 e Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+abbr,
+acronym {
+	border:0;
+}
+
+/**
+ * estilo definido para 'bold' mais ousado no Firefox 3 +, Safari 4/5, e Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+i,
+em {
+	font-style:italic;
+}
+
+mark { 
+	background:#ff0; color:#000
+}
+
+code, 
+kbd, 
+pre, 
+samp { 
+	font-family:"Courier New", Courier, monospace; font-size:1em; 
+}
+
+pre { 
+	white-space:pre;white-space:pre-wrap;word-wrap:break-word; 
+}
+
+address, 
+caption, 
+cite, 
+code, 
+dfn, 
+th, 
+var, 
+pre { 
+	font-style:normal;font-weight:normal; 
+}
+
+blockquote, 
+q { 
+	quotes:"\201C" "\201D" "\2018" "\2019" 
+}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after { 
+	content:""; 
+}
+
+ol, 
+ul { 
+	list-style:none 
+}
+
+li, 
+dl, 
+dt, 
+dd { 
+	display:list-item; list-style:none; quotes:"" "";
+}
+
+small { 
+	font-size:80% 
+}
+
+sub, sup { 
+	font-size:75%; line-height:1; position:relative; 
+}
+
+sup { 
+	top:-0.5em 
+}
+
+sub { 
+	bottom:-0.25em; 
+}
+
+img { 
+	-ms-interpolation-mode:bicubic; vertical-align:middle; 
+}
+
+svg:not(:root) { 
+	overflow:hidden; 
+}
+
+fieldset { 
+	border:1px solid #c0c0c0; padding:0.35em 0.625em 0.75em; vertical-align:middle; 
+}
+
+button, 
+input { 
+	line-height:normal; 
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+	cursor:pointer; -webkit-appearance:button; 
+}
+
+button[disabled], 
+input[disabled] { 
+	cursor:default; 
+}
+
+input[type="text"]::-ms-clear {
+	display: none; width : 0; height: 0; /* Não mostram o x para entradas de texto */
+}
+
+input[type="password"]::-ms-reveal {
+	display: none; width : 0; height: 0;  /* Não mostram o olho para as entradas de senha */
+}
+
+input[type="checkbox"], 
+input[type="radio"] { 
+	box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; 
+}
+
+input[type="search"] { 
+	-webkit-appearance:textfield; 
+}
+
+input[type="search"]::-webkit-search-cancel-button, 
+input[type="search"]::-webkit-search-decoration { 
+	-webkit-appearance:none; 
+}
+
+textarea { 
+	overflow:auto; resize:none;
+}
+
+input, 
+textarea, 
+select, 
+label { 
+	background-color:transparent; 
+}
+
+table { 
+	border-collapse:collapse; border-spacing:0; 
+}

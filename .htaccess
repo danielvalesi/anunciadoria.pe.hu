@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^confirmar-cadastro/?$ ajax/ajax-confirmar_cadastro.php?%{QUERY_STRING} [L]
+RewriteRule ^sair/?$ ajax/ajax-logout.php [L]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule \.(gif|jpe?g|png|bmp) img/clear.png [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?([^/]+)?/?([^/]+)?/?([^/]+)?/?([^/]+)?/?$ index.php?pn=$1&sub01=$2&sub02=$3&sub03=$4&sub04=$5&sub05=$6&%{QUERY_STRING} [L]

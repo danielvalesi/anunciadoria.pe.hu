@@ -1,0 +1,45 @@
+:: 03. Página com "Glossário de Mídias" [30 min]
+
+/html_tpl/glossario.php
+/src/init.php
+/html_tpl/menu.php
+
+:: 07. Filtro acompanha a barra de rolagem [30 min]
+
+/css/style.css 160 627 
+/js/anuncios_busca.js 469
+/html_tpl/anuncios-resultado.php 15
+
+:: 08. Alterar texto "cadastrar anuncio" para "cadastrar espaço de mídia" [15 min]
+
+/html_tpl/minha-conta/menu.php
+
+:: 09.Lembrete no cadastro: "Anúncio cadastrado com sucesso e aguardando validação" ou "Anúncio aguardando validação" [1h]
+
+/html_tpl/minha-conta/cadastrar-anuncio.php
+
+:: 11. Deixar claro que se o valor do anúncio não for preenchido aparecerá como "sob consulta" ou deixar a opção "sob consulta" [30 min] TOOLTIP
+
+/css/ui.css
+/html_tpl/minha-conta/cadastrar-anuncio.php
+
+:: 14. Em "meus anúncios" mostra a situação se esta "ativo", "pendente para aprovação" ou "inativo" (cores diferentes - verde para ativo) [1h]
+
+/src/front/minha_conta_front.php	
+
+:: 15. Alterar o título "Filtros de Anúncios" para apenas "Filtro" [15 min]
+
+/html_tpl/anuncios-resultado.php
+
+:: 16. Inserir "miniatura" de cada categoria no filtro para ilustrar [1h]
+/src/front/anuncios_front.php  117 152
+
+:: 18.Na exibição dos anúncios, travar o tamanho padrão para todos e deixar a opção "Mais info" para abrir o restante do texto descritivo do anúncio na mesma página como abre o "fazer proposta" [30 min]
+
+/css/style.css
+
+/js/anuncios_busca.js 433
+
+:: 19 Código do anúncio aparecer na busca [30 min]
+
+/src/front/anuncios_front.php 264

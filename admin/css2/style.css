@@ -1,0 +1,72 @@
+/* Tags */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+
+/* Personalização das Fontes ======================================================== */
+
+@font-face {
+    font-family: 'nomedafonte';
+    src: url('../fonts/nomedafonte.eot');
+    src: url('../fonts/nomedafonte.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nomedafonte.woff') format('woff'),
+         url('../fonts/nomedafonte.ttf') format('truetype'),
+         url('../fonts/nomedafonte') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Propriedades Básicas ======================================================== */
+
+body{ margin:0px; font-family:'Calibri', Arial, Sans-Serif; color:#333; }
+    
+    /* Fibonacci based heading scale ratio */
+    h1{ font-size: 30px; font-weight: normal; padding:25px 20px 20px 20px; }
+    h2{ font-size: 25px; font-weight: bold; }
+    h3{ font-size: 25px; font-weight: bold; }
+    h4{ font-size: 25px; font-weight: bold; }
+	
+	hr { height:1px; border:0px; color:#b0b0b0; background-color:#b0b0b0;   }
+
+	a { color:#333; text-decoration:none }
+	a:hover { color:#cb0d0d }
+	
+	ul { list-style:none }
+
+
+/* Estrutura ============================================================= */
+
+.wrapper { width:96%; margin:0 auto; position:relative;  }
+.wrapper ul{ width:100%;}
+.wrapper ul li{ width:100%;}
+
+
+/* Left & Right - alinhamento */
+.left { float: left; }
+.right { float: right; }
+
+	/* MIDDLE */
+    #middle { width: 100%; }
+	#middle p{ padding-left:2%; color:#999; }
+	#middle p span{ color:#000; padding-left:5px; }
+	.info{ width:50%; float:left;}
+	.fotos{ width:45%; float:right; padding-top:20px;}
+	.fotos img{ padding:3px; max-width:100%;}
+	
+
+/* Classes Reutilizáveis ============================================================ */
+
+.clear { clear:both }
+.margintop25 { margin-top:25px; }
+.margintop15 { margin-top:15px; }
+.margintop10 { margin-top:10px; }
+.linethrough { text-decoration:line-through }
+.radius5 { -moz-border-radius: 5px; border-radius:5px; }
+
+
+/* Especificações e observações do projeto =========================================================== */
+
+
+/* Detalhes de plugin ========================================================= */

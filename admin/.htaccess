@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /admin/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?([^/]+)?/?([^/]+)?/?([^/]+)?/?([^/]+)?/?([^/]+)?/?$ index.php?pn=$1&sub01=$2&sub02=$3&sub03=$4&sub04=$5&sub05=$6&%{QUERY_STRING} [L]
+
